@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localization/flutter_localization.dart';
+//import 'package:flutter_localization/flutter_localization.dart';
+import 'package:topten/pages/topTenAboutPage.dart';
 import 'package:topten/pages/topTenHomePage.dart';
-import 'package:topten/pages/topTenInformationPage.dart';
-import 'package:topten/pages/topTenFirstPage.dart';
+//import 'package:topten/pages/playersInformation.dart';
+import 'package:topten/pages/splashScreen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -14,15 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      locale: Locale('en',''),
-
-      localeListResolutionCallback: (locale,supportedLocales){
-        return locale;
-      },
-      localizationsDelegates: [
-        GlobalMaterialLocalization.delegate,
-
-      ],
+      initialRoute: '/',
+        routes: {
+        '/':(context)=>SplashScreen(),
+          '/home':(context)=>HomeScreen(),
+          '/info':(context)=>InfoPage()
+        },
     );
   }
 }

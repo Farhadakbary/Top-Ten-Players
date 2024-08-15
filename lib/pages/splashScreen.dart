@@ -1,29 +1,22 @@
 import 'package:flutter/material.dart';
 import 'topTenHomePage.dart';
-import 'package:flutter/services.dart';
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
+
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.push(
-        context,
-       MaterialPageRoute(builder: (context) => Directionality(textDirection: TextDirection.rtl,
-          child:_MyAppState())));
-       }
-      );
-    }
+          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+    });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,9 +33,11 @@ class _SplashScreenState extends State<SplashScreen> {
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.sports_soccer_outlined,
+            Icon(
+              Icons.sports_soccer_outlined,
               size: 100,
-              color: Colors.black,),
+              color: Colors.black,
+            ),
             SizedBox(
               height: 20,
             ),
@@ -56,3 +51,4 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
     );
   }
+}
