@@ -1,16 +1,28 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-class MenuItems{
-  static const String share= "Share";
-  static const String about= "About";
-  static const String exit= "Exit";
+import 'package:flutter_localization/flutter_localization.dart';
+import 'package:topten/pages/topTenHomePage.dart';
+import 'package:topten/pages/topTenInformationPage.dart';
+import 'package:topten/pages/topTenFirstPage.dart';
 
-  static const List<String> choice= <String>[share,about,exit];
+void main(){
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  static const Map<String ,IconData> choiceIcons=<String, IconData>{
-    share:Icons.share,
-    about:Icons.info_outline,
-    exit:Icons.exit_to_app
-  };
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      locale: Locale('en',''),
+
+      localeListResolutionCallback: (locale,supportedLocales){
+        return locale;
+      },
+      localizationsDelegates: [
+        GlobalMaterialLocalization.delegate,
+
+      ],
+    );
+  }
 }

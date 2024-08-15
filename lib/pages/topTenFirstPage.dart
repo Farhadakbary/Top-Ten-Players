@@ -1,23 +1,34 @@
 import 'package:flutter/material.dart';
+import 'topTenHomePage.dart';
+import 'package:flutter/services.dart';
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(
+    home: MyApp(),
+  ));
 }
-class MyApp extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Top Ten Players',
-      home: TopTenAppScreen(),
-    );
-  }
+  _SplashScreenState createState() => _SplashScreenState();
 }
-class TopTenAppScreen extends StatelessWidget {
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.push(
+        context,
+       MaterialPageRoute(builder: (context) => Directionality(textDirection: TextDirection.rtl,
+          child:_MyAppState())));
+       }
+      );
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Top Ten Players",
           style: TextStyle(color: Colors.black),
         ),
@@ -26,7 +37,7 @@ class TopTenAppScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.sports_soccer_outlined,
@@ -45,4 +56,3 @@ class TopTenAppScreen extends StatelessWidget {
       ),
     );
   }
-}
