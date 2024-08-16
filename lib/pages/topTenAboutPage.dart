@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class InfoPage extends StatelessWidget {
@@ -10,20 +12,20 @@ class InfoPage extends StatelessWidget {
         backgroundColor: Colors.teal,
 
         // automaticallyImplyLeading: false,
-        title: Text(
+        title: const Text(
           'About us',
           style: TextStyle(
               fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 70,
               backgroundImage: AssetImage(''),
             ),
-            Text(
+            const Text(
               'Farhad Akbary',
               style: TextStyle(
                   color: Colors.teal,
@@ -31,30 +33,30 @@ class InfoPage extends StatelessWidget {
                   fontSize: 30),
             ),
             Text(
-              'A progarmmer',
+              'A programmer',
               style: TextStyle(
                   letterSpacing: 3,
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                   color: Colors.teal.shade800),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Divider(
+            const Divider(
               thickness: 1,
               color: Colors.teal,
               endIndent: 50,
               indent: 50,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
                 color: Colors.teal.shade300,
-                child: ListTile(
+                child: const ListTile(
                   leading: Icon(Icons.email),
                   title: Directionality(
                     textDirection: TextDirection.ltr,
@@ -72,7 +74,7 @@ class InfoPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Card(
                 color: Colors.teal.shade300,
-                child: ListTile(
+                child: const ListTile(
                   leading: Icon(Icons.phone),
                   title: Directionality(
                     textDirection: TextDirection.ltr,
@@ -93,7 +95,7 @@ class InfoPage extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {},
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       backgroundColor: Colors.transparent,
                       radius: 25,
                       backgroundImage: NetworkImage(
@@ -102,17 +104,10 @@ class InfoPage extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () {},
-                    child: CircleAvatar(
-                      backgroundColor: Colors.transparent,
-                      radius: 25,
-                      backgroundImage: NetworkImage(
-                          'https://th.bing.com/th/id/R.88568e632a200ce56cae7ede31e81cc8?rik=mBfH%2fCME%2bc6AhA&pid=ImgRaw&r=0'),
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {},
-                    child: CircleAvatar(
+                    onDoubleTap: () {
+                      print("object");
+                    },
+                    child: const CircleAvatar(
                       backgroundColor: Colors.transparent,
                       radius: 25,
                       backgroundImage: NetworkImage(

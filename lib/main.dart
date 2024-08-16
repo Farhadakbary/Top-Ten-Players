@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_localization/flutter_localization.dart';
 import 'package:topten/pages/topTenAboutPage.dart';
 import 'package:topten/pages/topTenHomePage.dart';
-//import 'package:topten/pages/playersInformation.dart';
 import 'package:topten/pages/splashScreen.dart';
-
 void main(){
   runApp(const MyApp());
 }

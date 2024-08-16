@@ -20,14 +20,17 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title: const Text(
           "Top Ten Players",
           style: TextStyle(color: Colors.black),
         ),
-        backgroundColor: Colors.grey,
+
+        backgroundColor: Color.fromRGBO(80, 199, 111,1),
       ),
-      body: Container(
+      body:Container(
+
         width: double.infinity,
         height: double.infinity,
         child: const Column(
@@ -36,16 +39,16 @@ class _SplashScreenState extends State<SplashScreen> {
             Icon(
               Icons.sports_soccer_outlined,
               size: 100,
-              color: Colors.black,
+              color:Color.fromRGBO(58, 83, 148,1),
             ),
             SizedBox(
               height: 20,
             ),
-            Text("Top Ten Players"),
+            Text("Top Ten Players",style:TextStyle(fontSize: 20,color: Color.fromRGBO(58, 83, 148,1) ),),
             SizedBox(
               height: 20,
             ),
-            Text("V.0.1.1"),
+            Text("V.0.1.1",style: TextStyle(fontSize: 20,color: Color.fromRGBO(58, 83, 148,1)),),
           ],
         ),
       ),
