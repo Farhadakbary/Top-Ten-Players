@@ -28,13 +28,6 @@ class _PlayerinfoState extends State<Playerinfo> {
     ),
         ),
         title: Text(widget.Item.name.toString(),),
-        
-          actions: [
-            IconButton(onPressed: () {
-              Navigator.pop(context);
-            }, icon: Icon(Icons.arrow_forward_ios,
-              color: Colors.white,))
-          ],
         ),
       ),
       body: Container(
@@ -64,7 +57,9 @@ class _PlayerinfoState extends State<Playerinfo> {
               Padding(padding: EdgeInsets.all(8),
                 child: Text(widget.Item.name.toString()),),
               Padding(padding: EdgeInsets.all(10),
-                child: Text(widget.Item.desc.toString()),)
+                child: Text(widget.Item.desc.toString(),style: TextStyle(fontSize: 15,
+                    fontWeight: FontWeight.bold
+                ),),)
             ],
           ),
         ),

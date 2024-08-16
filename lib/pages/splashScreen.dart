@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Colors.redAccent,  // رنگ اول
+                  Colors.blueAccent,  // رنگ اول
                   Colors.greenAccent, // رنگ دوم
                 ],
               ),
@@ -47,9 +47,8 @@ class _SplashScreenState extends State<SplashScreen> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Colors.redAccent, // رنگ ابتدایی
+              Colors.blueAccent, // رنگ ابتدایی
               Colors.greenAccent,  // رنگ انتهایی
-              Colors.black
             ],
           ),
         ),
@@ -61,16 +60,16 @@ class _SplashScreenState extends State<SplashScreen> {
             Icon(
               Icons.sports_soccer_outlined,
               size: 100,
-              color:Color.fromRGBO(58, 83, 148,1),
+              color:Colors.black,
             ),
             SizedBox(
               height: 20,
             ),
-            Text("Top Ten Players",style:TextStyle(fontSize: 20,color: Color.fromRGBO(58, 83, 148,1) ),),
+            Text("Top Ten Players",style:TextStyle(fontSize: 20,color: Colors.black ),),
             SizedBox(
               height: 20,
             ),
-            Text("V.0.1.1",style: TextStyle(fontSize: 20,color: Color.fromRGBO(58, 83, 148,1)),),
+            Text("V.0.1.1",style: TextStyle(fontSize: 20,color: Colors.black),),
           ],
         ),
       ),

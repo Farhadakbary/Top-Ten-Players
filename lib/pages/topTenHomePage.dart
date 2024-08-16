@@ -488,7 +488,6 @@ With his impressive career and personal integrity, Kaká stands out not only as 
     ),
     ),
     ),
-
               title: const Text('Top Ten Players'),
               actions: [
                 PopupMenuButton(
@@ -496,15 +495,15 @@ With his impressive career and personal integrity, Kaká stands out not only as 
                       Icons.more_vert,
                       color: Colors.black,
                     ),
-                    color: Color.fromRGBO(50, 125, 83,1),
+                    color: Colors.lightBlueAccent,
                     onSelected: ChoiceAction,
                     itemBuilder: (BuildContext context) {
                       return MenuItems.choice.map((String choice) {
                         return PopupMenuItem<String>(
                           value: choice,
                           child: ListTile(
-                            title: Text(choice,style: TextStyle(color: Colors.white),),
-                            trailing: Icon(MenuItems.choiceIcons[choice],color: Colors.white,),
+                            title: Text(choice,style: TextStyle(color: Colors.black),),
+                            trailing: Icon(MenuItems.choiceIcons[choice],color: Colors.black,),
                           ),
                         );
                       }).toList();
