@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
-import 'topTenHomePage.dart';
+
 class SharePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class SharePage extends StatelessWidget {
             SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {
-                 share.share('Check out this cool content: https://example.com');
+                Share.share('Check out this cool content: https://example.com');
               },
               icon: Icon(Icons.share),
               label: Text('Share Now'),

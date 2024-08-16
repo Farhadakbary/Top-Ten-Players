@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:topten/home/players.dart';
 import 'package:topten/pages/topTenAboutPage.dart';
+import 'package:topten/pages/topTenSharePage.dart';
 import '../home/popupMenu.dart';
 import 'playersInformation.dart';
 class HomeScreen extends StatefulWidget {
@@ -523,10 +524,10 @@ With his impressive career and personal integrity, Kaká stands out not only as 
           InfoPage()
       ));
     } else if (choice == MenuItems.share) {
-      //Navigator.push(
-        //context,
-        //MaterialPageRoute(builder: (context) => SharePage()),
-      //);
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SharePage()),
+      );
     } else if (choice == MenuItems.exit) {
     Navigator.pop(context);
     }
