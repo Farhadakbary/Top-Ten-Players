@@ -15,10 +15,10 @@ class _PlayerinfoState extends State<Playerinfo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60.0),
+        preferredSize: const Size.fromHeight(60.0),
         child: AppBar(
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -59,17 +59,17 @@ class _PlayerinfoState extends State<Playerinfo> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Text(widget.Item.name.toString()),
               ),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Text(
                   widget.Item.desc.toString(),
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 20), // فاصله
+              const SizedBox(height: 20), // فاصله
               Center(
                 child: ElevatedButton(
                   onPressed: () async {
@@ -81,7 +81,7 @@ class _PlayerinfoState extends State<Playerinfo> {
                       // could not lunch
                     }
                   },
-                  child: Text('Go to Google'),
+                  child: const Text('Go to Google'),
                 ),
               ),
             ],
