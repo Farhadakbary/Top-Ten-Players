@@ -7,7 +7,7 @@ class SharePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Share Page'),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Color.fromRGBO(58, 83, 148,1),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -26,13 +26,13 @@ class SharePage extends StatelessWidget {
             SizedBox(height: 20),
             Container(
               decoration: BoxDecoration(
-                color: Colors.blueAccent,
+                color: Color.fromRGBO(58, 83, 148,1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'This is some cool content that you can share with your friends!',
+                  ' You can share with your friends!',
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.white,
@@ -45,12 +45,12 @@ class SharePage extends StatelessWidget {
               onPressed: () {
                 Share.share('Check out this cool content: https://example.com');
               },
-              icon: Icon(Icons.share),
-              label: Text('Share Now'),
+              icon: Icon(Icons.share,color: Colors.black,),
+              label: Text('Share Now',style: TextStyle(color: Colors.black),),
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.symmetric(vertical: 12),
                 textStyle: TextStyle(fontSize: 18),
-                backgroundColor: Colors.blueAccent,
+                backgroundColor: Color.fromRGBO(58, 83, 148,1),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
