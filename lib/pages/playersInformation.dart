@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:topten/home/players.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Playerinfo extends StatefulWidget {
   Playerinfo({super.key, required this.Item});
@@ -67,7 +68,21 @@ class _PlayerinfoState extends State<Playerinfo> {
                   widget.Item.desc.toString(),
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
-              )
+              ),
+              SizedBox(height: 20), // فاصله
+              Center(
+                child: ElevatedButton(
+                  onPressed: () async {
+                    const url = 'https://www.google.com';
+                    if (await canLaunch('https://footballi.net/')) {
+                      await launch('https://footballi.net/');
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                  child: Text('Go to Google'),
+                ),
+              ),
             ],
           ),
         ),
