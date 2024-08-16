@@ -8,13 +8,25 @@ class InfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(58, 83, 148,1),
-        title: const Text(
-          'About us',
-          style: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-        ),
+      appBar:PreferredSize(
+        preferredSize: Size.fromHeight(60.0), // ارتفاع AppBar
+    child: AppBar(
+    flexibleSpace: Container(
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+    Colors.blueAccent,  // رنگ اول
+    Colors.greenAccent, // رنگ دوم
+    ],
+    ),
+    ),
+    ),
+      title: Text('About us'),
+      backgroundColor: Colors.transparent, // برای شفاف بودن AppBar
+      elevation: 0, // حذف سایه AppBar
+    ),
       ),
       body: Stack(
         children: [

@@ -473,8 +473,23 @@ With his impressive career and personal integrity, Kaká stands out not only as 
   Widget build(BuildContext context) {
     return Scaffold(
 
-            appBar: AppBar(
-              backgroundColor: const Color.fromRGBO(80, 199, 111,1),
+            appBar:  PreferredSize(
+        preferredSize: Size.fromHeight(60.0), // ارتفاع AppBar
+    child: AppBar(
+    flexibleSpace: Container(
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+    Colors.blueAccent,  // رنگ اول
+    Colors.greenAccent, // رنگ دوم
+    Colors.yellowAccent, // رنگ سوم
+    ],
+    ),
+    ),
+    ),
+
               title: const Text('Top Ten Players'),
               actions: [
                 PopupMenuButton(
@@ -497,25 +512,37 @@ With his impressive career and personal integrity, Kaká stands out not only as 
                     }),
               ],
             ),
-            backgroundColor: const Color.fromRGBO(93, 171, 89,0.6),
+            ),
             body:
-            ListView.builder(
-              itemCount: Players.length,
-              itemBuilder: (context, index) {
-                return Card(
-                    margin: const EdgeInsets.symmetric(vertical: 3, horizontal:3),
-                    child: ListTile(
-                      splashColor: Colors.teal,
-                     title: Text(Players[index].name.toString()),
-                     leading: CircleAvatar(backgroundImage: NetworkImage(Players[index].imagurl.toString(),
-                      ),),
-                     onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                       Playerinfo(Item:Players[index]),
-            ),);},
-                    )
-                );
-              },
+            Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Colors.blueAccent, // رنگ ابتدایی
+                    Colors.greenAccent, // رنگ انتهایی
+                  ],
+                ),
+              ),
+              child: ListView.builder(
+                itemCount: Players.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                      margin: const EdgeInsets.symmetric(vertical: 3, horizontal:3),
+                      child: ListTile(
+                        splashColor: Colors.teal,
+                       title: Text(Players[index].name.toString()),
+                       leading: CircleAvatar(backgroundImage: NetworkImage(Players[index].imagurl.toString(),
+                        ),),
+                       onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                         Playerinfo(Item:Players[index]),
+              ),);},
+                      )
+                  );
+                },
+              ),
             ));}
 
   void ChoiceAction(String choice) {

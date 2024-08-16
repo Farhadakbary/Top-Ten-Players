@@ -21,13 +21,25 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      appBar: AppBar(
-        title: const Text(
-          "Top Ten Players",
-          style: TextStyle(color: Colors.black),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(60.0), // ارتفاع AppBar
+        child: AppBar(
+          flexibleSpace: Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.redAccent,  // رنگ اول
+                  Colors.greenAccent, // رنگ دوم
+                ],
+              ),
+            ),
+          ),
+          title: const Text(' Top Ten Players'),
+          backgroundColor: Colors.transparent, // برای شفاف بودن AppBar
+          elevation: 0, // حذف سایه AppBar
         ),
-
-        backgroundColor: Color.fromRGBO(80, 199, 111,1),
       ),
       body:Container(
         decoration: BoxDecoration(
