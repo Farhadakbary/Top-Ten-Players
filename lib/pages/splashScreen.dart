@@ -30,7 +30,17 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Color.fromRGBO(80, 199, 111,1),
       ),
       body:Container(
-
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.redAccent, // رنگ ابتدایی
+              Colors.greenAccent,  // رنگ انتهایی
+              Colors.black
+            ],
+          ),
+        ),
         width: double.infinity,
         height: double.infinity,
         child: const Column(

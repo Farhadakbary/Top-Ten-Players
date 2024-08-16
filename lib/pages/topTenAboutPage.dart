@@ -21,13 +21,17 @@ class InfoPage extends StatelessWidget {
           // Background image
           Container(
             decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage('https://th.bing.com/th/id/OIP.vIK5ldyI5MSVMjUzUfYScgHaE7?rs=1&pid=ImgDetMain'), // مسیر عکس پس‌زمینه
-                fit: BoxFit.cover,
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.blueAccent, // رنگ ابتدایی
+                  Colors.greenAccent, // رنگ انتهایی
+
+                ],
+              ),
               ),
             ),
-          ),
-          // The actual content
           SingleChildScrollView(
             child: Column(
               children: [

@@ -57,8 +57,8 @@ class SharePage extends StatelessWidget {
                 onPressed: () {
                   Share.share('Check out this cool content: https://example.com');
                 },
-                icon: Icon(Icons.share,color: Colors.black,),
-                label: Text('Share Now',style: TextStyle(color: Colors.black),),
+                icon: Icon(Icons.share,color: Colors.white,),
+                label: Text('Share Now',style: TextStyle(color: Colors.white),),
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(vertical: 12),
                   textStyle: TextStyle(fontSize: 18),
