@@ -78,6 +78,7 @@ class _PlayerinfoState extends State<Playerinfo> {
                       await launch('https://footballi.net/');
                     } else {
                       throw 'Could not launch $url';
+                      // could not lunch
                     }
                   },
                   child: Text('Go to Google'),
