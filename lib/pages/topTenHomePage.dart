@@ -484,7 +484,6 @@ With his impressive career and personal integrity, Kaká stands out not only as 
     colors: [
     Colors.blueAccent,  // رنگ اول
     Colors.greenAccent, // رنگ دوم
-    Colors.yellowAccent, // رنگ سوم
     ],
     ),
     ),
