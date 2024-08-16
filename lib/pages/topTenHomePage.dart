@@ -4,6 +4,7 @@ import 'package:topten/pages/topTenAboutPage.dart';
 import 'package:topten/pages/topTenSharePage.dart';
 import '../home/popupMenu.dart';
 import 'playersInformation.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -12,9 +13,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-  List<Player> Players=[
-  Player('Lionel Messi', '''Full Name: Lionel Andrés Messi
+  List<Player> Players = [
+    Player(
+        'Lionel Messi',
+        '''Full Name: Lionel Andrés Messi
 Date of Birth: June 24, 1987
 Place of Birth: Rosario, Argentina
 Height: 1.70 m (5 ft 7 in)
@@ -57,8 +59,11 @@ Personal Life
 Lionel Messi married his childhood sweetheart, Antonela Roccuzzo, in June 2017, and the couple has three children: Thiago, Mateo, and Ciro. Messi is known to be a private individual who values family time and often shares glimpses of his life with his wife and children on social media.
 
 Conclusion
-Lionel Messi's journey from a young boy with a dream in Rosario to a global football icon is a testament to his extraordinary talent and relentless work ethic. His numerous records, accolades, and profound influence on the sport ensure his legacy as one of the all-time greats will endure for generations. Whether playing for FC Barcelona, PSG, or the Argentina national team, Messi's impact on football is indelible. ''', "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"),
-  Player('Crsitino Ronaldo', ''' Early Life:
+Lionel Messi's journey from a young boy with a dream in Rosario to a global football icon is a testament to his extraordinary talent and relentless work ethic. His numerous records, accolades, and profound influence on the sport ensure his legacy as one of the all-time greats will endure for generations. Whether playing for FC Barcelona, PSG, or the Argentina national team, Messi's impact on football is indelible. ''',
+        "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"),
+    Player(
+        'Crsitino Ronaldo',
+        ''' Early Life:
 Cristiano Ronaldo dos Santos Aveiro was born on February 5, 1985, in Funchal, Madeira, Portugal. He is the youngest of four children born to Maria Dolores dos Santos Aveiro and José Manuel Aveiro. Growing up in a working-class family, Ronaldo showed an early passion for football, and at just 8 years old, he began playing for a local club called Andorinha. His talent was evident from a young age, and he quickly moved through the ranks in local football.
 
 Youth Career:
@@ -119,8 +124,11 @@ Ronaldo is the father of four children and has been in high-profile relationship
 
 Conclusion:
 Cristiano Ronaldo's remarkable journey from a young boy in Madeira to a global football icon is a testament to his talent and determination. His numerous records, accolades, and influence on the game continue to inspire aspiring footballers around the globe. Through his on-field achievements and off-field contributions, Ronaldo's legacy is sure to endure for generations to come.
-   ''', "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/800px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg"),
-  Player('Pele', ''' Early Life:
+   ''',
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/800px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg"),
+    Player(
+        'Pele',
+        ''' Early Life:
 Pelé was born Edson Arantes do Nascimento on October 23, 1940, in Três Corações, a small town in the state of Minas Gerais, Brazil. He was raised in a humble family; his father, João Ramos do Nascimento, was a former football player who struggled to support the family. Young Edson developed a passion for football at an early age, playing with a makeshift ball made of socks stuffed with newspaper. Despite financial hardships, his family encouraged his love for the sport.
 
 Youth Career:
@@ -159,8 +167,11 @@ Post-Retirement:
 After retiring from professional football, Pelé remained actively involved in the sport and was engaged in various charitable activities. He worked as a global ambassador for football, promoting the sport's popularity and development, especially in underprivileged communities. Pelé has also appeared in movies, documentaries, and commercials, further cementing his status as a cultural icon.
 
 Conclusion:
-Pelé’s life and career embody the essence of football. From a young boy kicking a ragged ball in Brazil to an international superstar who inspired generations, his legacy is unparalleled. Pelé not only defined an era of football but also bridged cultural divides and brought people together through the beautiful game. His impact and contributions to sport and society continue to resonate, earning him a place in the hearts of fans around the world. ''', "https://th.bing.com/th/id/OIP.iwMilTEa4ZlZ2Z2HJMYr-AAAAA?rs=1&pid=ImgDetMain"),
-  Player('Ronaldo', ''' Early Life:
+Pelé’s life and career embody the essence of football. From a young boy kicking a ragged ball in Brazil to an international superstar who inspired generations, his legacy is unparalleled. Pelé not only defined an era of football but also bridged cultural divides and brought people together through the beautiful game. His impact and contributions to sport and society continue to resonate, earning him a place in the hearts of fans around the world. ''',
+        "https://th.bing.com/th/id/OIP.iwMilTEa4ZlZ2Z2HJMYr-AAAAA?rs=1&pid=ImgDetMain"),
+    Player(
+        'Ronaldo',
+        ''' Early Life:
 Ronaldo Luís Nazário de Lima, commonly known as Ronaldo, was born on September 22, 1976, in Rio de Janeiro, Brazil. Growing up in a humble environment, he showed a passion for football from a very young age. Ronaldo joined the local youth team, Social Ramos, at the age of 12, where his prodigious talent quickly became apparent. By 13, he moved to São Cristóvão, a club that would provide the platform for his ascent in professional football.
 
 Professional Career:
@@ -193,8 +204,11 @@ Post-Retirement:
 After retiring from professional football, Ronaldo has remained involved in the sport, taking on various roles, including as a sports executive and ambassador. He has invested in football-related ventures and is known for his philanthropic efforts, particularly in promoting sports for youth in Brazil.
 
 Conclusion:
-Ronaldo Nazário's journey from a young boy in Rio de Janeiro to a global football icon is a testament to his talent, determination, and resilience. Despite facing numerous injuries throughout his career, his achievements on the pitch have left an indelible mark on the world of football. His legacy as one of the greatest strikers in history continues to inspire fans and players alike. ''', "https://th.bing.com/th/id/OIP.3zpdg4IrgRIihVthvSbsLwHaE-?rs=1&pid=ImgDetMain"),
-  Player('Maradona', ''' Early Life and Background:
+Ronaldo Nazário's journey from a young boy in Rio de Janeiro to a global football icon is a testament to his talent, determination, and resilience. Despite facing numerous injuries throughout his career, his achievements on the pitch have left an indelible mark on the world of football. His legacy as one of the greatest strikers in history continues to inspire fans and players alike. ''',
+        "https://th.bing.com/th/id/OIP.3zpdg4IrgRIihVthvSbsLwHaE-?rs=1&pid=ImgDetMain"),
+    Player(
+        'Maradona',
+        ''' Early Life and Background:
 Diego Armando Maradona was born on October 30, 1960, in Lanús, Argentina, and grew up in the Villa Fiorito neighborhood of Buenos Aires. He was the fifth of eight children in a working-class family. From a young age, Maradona showed exceptional talent in football, often playing with a makeshift ball in the streets and local fields. His passion for the sport was evident, and by the time he was eight, he had joined the youth team of Argentinos Juniors.
 
 Professional Career:
@@ -231,8 +245,11 @@ Death:
 Maradona passed away on November 25, 2020, at the age of 60 due to a heart attack following complications from a brain surgery earlier that month. His death was met with widespread mourning around the world, as fans, players, and fellow athletes paid tribute to his extraordinary legacy and impact on the sport.
 
 Conclusion:
-Diego Maradona's life and career encompassed both the glories of football and the struggles of human existence. His brilliance on the pitch immortalized him as a legend, while his vulnerabilities made him a relatable figure for many. Maradona's spirit and love for the game continue to inspire players and fans around the world, securing his place in history as one of the true greats of the sport. ''', "https://th.bing.com/th/id/R.0d3ec8f285a53a4bb6386386d86ebe8d?rik=5BpRdctX7iz6mQ&pid=ImgRaw&r=0"),
-  Player('Zaidan', ''' Early Life:
+Diego Maradona's life and career encompassed both the glories of football and the struggles of human existence. His brilliance on the pitch immortalized him as a legend, while his vulnerabilities made him a relatable figure for many. Maradona's spirit and love for the game continue to inspire players and fans around the world, securing his place in history as one of the true greats of the sport. ''',
+        "https://th.bing.com/th/id/R.0d3ec8f285a53a4bb6386386d86ebe8d?rik=5BpRdctX7iz6mQ&pid=ImgRaw&r=0"),
+    Player(
+        'Zaidan',
+        ''' Early Life:
 Zinedine Zidane was born on June 23, 1972, in La Castellane, a suburb of Marseille, France, to Algerian parents who had immigrated from Kabylie. Zidane was the youngest of five siblings, and his family faced economic challenges. His love for football began at a young age, and he often played in the streets of his neighborhood.
 
 Youth Career:
@@ -291,8 +308,11 @@ Zinedine Zidane is married to Véronique Zidane, and they have four children: En
 Legacy:
 Zinedine Zidane is widely regarded as one of the greatest footballers of all time. His vision, technique, and elegance on the ball, combined with his leadership qualities, have left an indelible mark on the sport. He is celebrated not only for his accomplishments on the pitch but also for his influence as a coach and mentor to the next generation of players.
 
-As of my last knowledge update in October 2023, Zidane's future in coaching remains a topic of interest among fans and analysts alike. His journey from humble beginnings to footballing legend continues to inspire millions around the world. ''', "https://th.bing.com/th/id/R.0a1398bb6e99aa5b7fa86307a7afa084?rik=9D2j3Q%2b9u0CXBQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-sad207HreZw%2fT3s4Uqw6RFI%2fAAAAAAAADVw%2fgBkwWQY1YvA%2fs1600%2fProfile%2bFootball%2bStars_Zinedine%2bZidane_5.jpg&ehk=J5ZoSpr7Cr%2fEFAW2v0G8E85U6eLHzFVF6MmLmrcxg6A%3d&risl=&pid=ImgRaw&r=0"),
-  Player('Crayof', ''' Early Life:
+As of my last knowledge update in October 2023, Zidane's future in coaching remains a topic of interest among fans and analysts alike. His journey from humble beginnings to footballing legend continues to inspire millions around the world. ''',
+        "https://th.bing.com/th/id/R.0a1398bb6e99aa5b7fa86307a7afa084?rik=9D2j3Q%2b9u0CXBQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-sad207HreZw%2fT3s4Uqw6RFI%2fAAAAAAAADVw%2fgBkwWQY1YvA%2fs1600%2fProfile%2bFootball%2bStars_Zinedine%2bZidane_5.jpg&ehk=J5ZoSpr7Cr%2fEFAW2v0G8E85U6eLHzFVF6MmLmrcxg6A%3d&risl=&pid=ImgRaw&r=0"),
+    Player(
+        'Crayof',
+        ''' Early Life:
 Johan Cruyff was born on April 25, 1947, in Amsterdam, Netherlands. He grew up in the working-class neighborhood of Betondorp, where his passion for football developed at an early age. Cruyff's father, a butcher, passed away when he was just 12 years old, leaving a significant impact on his family. Despite this adversity, Cruyff's talent on the pitch quickly became apparent.
 
 Career at Ajax:
@@ -334,8 +354,11 @@ Cruyff was married to Danny Coster, with whom he had three children: Jordi, Susi
 
 His philosophy, “Playing football is very simple, but playing simple football is the hardest thing there is,” encapsulates his profound understanding of the game and his ideals about football.
 
-Johan Cruyff's influence on football, both as a player and coach, has made him a global icon, and he is often cited among the greatest footballers in history. His vision and legacy continue to inspire generations of players and coaches around the world. ''', "https://th.bing.com/th/id/OIP.2sK4AVe7bHWZsuPkkqCKZwHaE-?w=1024&h=688&rs=1&pid=ImgDetMain"),
-  Player('Ronaldiniho', ''' Full Name: Ronaldo de Assis Moreira
+Johan Cruyff's influence on football, both as a player and coach, has made him a global icon, and he is often cited among the greatest footballers in history. His vision and legacy continue to inspire generations of players and coaches around the world. ''',
+        "https://th.bing.com/th/id/OIP.2sK4AVe7bHWZsuPkkqCKZwHaE-?w=1024&h=688&rs=1&pid=ImgDetMain"),
+    Player(
+        'Ronaldiniho',
+        ''' Full Name: Ronaldo de Assis Moreira
 Birthdate: March 21, 1980
 Birthplace: Porto Alegre, Brazil
 Position: Attacking Midfielder / Forward
@@ -386,8 +409,11 @@ Known for his charismatic personality, Ronaldinho embraced the fun side of socce
 
 Ronaldinho is also known for his love of music and has released music albums, reflecting his passion for cultural expression beyond football. He leads a lively and colorful life, often engaging with fans around the world.
 
-As of 2023, Ronaldinho continues to be a beloved ambassador for football, inspiring millions with his legacy of creativity, flair, and the sheer joy of the game. ''', "https://th.bing.com/th/id/R.c6bfe03dc82c7376db933f78b6de363b?rik=lmzgK7GhPlFGEA&pid=ImgRaw&r=0"),
-  Player('Maldini', ''' Full Name: Paolo Maldini
+As of 2023, Ronaldinho continues to be a beloved ambassador for football, inspiring millions with his legacy of creativity, flair, and the sheer joy of the game. ''',
+        "https://th.bing.com/th/id/R.c6bfe03dc82c7376db933f78b6de363b?rik=lmzgK7GhPlFGEA&pid=ImgRaw&r=0"),
+    Player(
+        'Maldini',
+        ''' Full Name: Paolo Maldini
 Birthdate: June 26, 1968
 Birthplace: Milan, Italy
 Position: Defender (Left-back / Center-back)
@@ -423,8 +449,11 @@ Maldini is also a symbol of loyalty and commitment, having spent his entire play
 Personal Life:
 Off the pitch, Maldini is known for his charitable work and commitment to various causes. He is married to Adriana Fossa, and the couple has two sons, Christian and Daniel, both of whom are involved in football. Paolo Maldini has often emphasized the importance of family and values, both in his life and career.
 
-With his impressive legacy, both as a player and an ambassador for the sport, Paolo Maldini continues to be celebrated as a football icon, admired not only for his skills on the field but also for his sportsmanship and character off it. ''', "https://th.bing.com/th/id/R.ddcf0ca724f4346067b708ed03fedb23?rik=Ip%2bwOIxHyiBXeA&pid=ImgRaw&r=0"),
-  Player('Kaka', ''' Full Name: Ricardo Izecson dos Santos Leite
+With his impressive legacy, both as a player and an ambassador for the sport, Paolo Maldini continues to be celebrated as a football icon, admired not only for his skills on the field but also for his sportsmanship and character off it. ''',
+        "https://th.bing.com/th/id/R.ddcf0ca724f4346067b708ed03fedb23?rik=Ip%2bwOIxHyiBXeA&pid=ImgRaw&r=0"),
+    Player(
+        'Kaka',
+        ''' Full Name: Ricardo Izecson dos Santos Leite
 Birthdate: April 22, 1982
 Birthplace: Gama, Federal District, Brazil
 Position: Attacking Midfielder
@@ -467,94 +496,107 @@ After retiring from professional football, Kaká has remained involved in the sp
 Personal Life:
 Kaká is married to Caroline Celico, with whom he has two children. He is known for his Christian faith, which he openly shares, and has been a role model for many in both sports and personal conduct.
 
-With his impressive career and personal integrity, Kaká stands out not only as a football legend but also as a true ambassador of the sport. ''', "https://th.bing.com/th/id/R.dfbacce07a85b62807ac27ad4f86413e?rik=F%2bkwOtb%2fvvCZ5A&pid=ImgRaw&r=0"),
+With his impressive career and personal integrity, Kaká stands out not only as a football legend but also as a true ambassador of the sport. ''',
+        "https://th.bing.com/th/id/R.dfbacce07a85b62807ac27ad4f86413e?rik=F%2bkwOtb%2fvvCZ5A&pid=ImgRaw&r=0"),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-            appBar:  PreferredSize(
-        preferredSize: Size.fromHeight(60.0), // ارتفاع AppBar
-    child: AppBar(
-    flexibleSpace: Container(
-    decoration: BoxDecoration(
-    gradient: LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [
-    Colors.blueAccent,  // رنگ اول
-    Colors.greenAccent, // رنگ دوم
-    ],
-    ),
-    ),
-    ),
-              title: const Text('Top Ten Players'),
-              actions: [
-                PopupMenuButton(
-                    icon: const Icon(
-                      Icons.more_vert,
-                      color: Colors.black,
-                    ),
-                    color: Colors.lightBlueAccent,
-                    onSelected: ChoiceAction,
-                    itemBuilder: (BuildContext context) {
-                      return MenuItems.choice.map((String choice) {
-                        return PopupMenuItem<String>(
-                          value: choice,
-                          child: ListTile(
-                            title: Text(choice,style: TextStyle(color: Colors.black),),
-                            trailing: Icon(MenuItems.choiceIcons[choice],color: Colors.black,),
-                          ),
-                        );
-                      }).toList();
-                    }),
-              ],
-            ),
-            ),
-            body:
-            Container(
-              decoration: const BoxDecoration(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(60.0), // ارتفاع AppBar
+          child: AppBar(
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Colors.blueAccent, // رنگ ابتدایی
-                    Colors.greenAccent, // رنگ انتهایی
+                    Colors.blueAccent, // رنگ اول
+                    Colors.greenAccent, // رنگ دوم
                   ],
                 ),
               ),
-              child: ListView.builder(
-                itemCount: Players.length,
-                itemBuilder: (context, index) {
-                  return Card(
-                      margin: const EdgeInsets.symmetric(vertical: 3, horizontal:3),
-                      child: ListTile(
-                        splashColor: Colors.teal,
-                       title: Text(Players[index].name.toString()),
-                       leading: CircleAvatar(backgroundImage: NetworkImage(Players[index].imagurl.toString(),
-                        ),),
-                       onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                         Playerinfo(Item:Players[index]),
-              ),);},
-                      )
-                  );
-                },
-              ),
-            ));}
+            ),
+            title: const Text('Top Ten Players'),
+            actions: [
+              PopupMenuButton(
+                  icon: const Icon(
+                    Icons.more_vert,
+                    color: Colors.black,
+                  ),
+                  color: Colors.lightBlueAccent,
+                  onSelected: ChoiceAction,
+                  itemBuilder: (BuildContext context) {
+                    return MenuItems.choice.map((String choice) {
+                      return PopupMenuItem<String>(
+                        value: choice,
+                        child: ListTile(
+                          title: Text(
+                            choice,
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          trailing: Icon(
+                            MenuItems.choiceIcons[choice],
+                            color: Colors.black,
+                          ),
+                        ),
+                      );
+                    }).toList();
+                  }),
+            ],
+          ),
+        ),
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.blueAccent, // رنگ ابتدایی
+                Colors.greenAccent, // رنگ انتهایی
+              ],
+            ),
+          ),
+          child: ListView.builder(
+            itemCount: Players.length,
+            itemBuilder: (context, index) {
+              return Card(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 3, horizontal: 3),
+                  child: ListTile(
+                    splashColor: Colors.teal,
+                    title: Text(Players[index].name.toString()),
+                    leading: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                        Players[index].imagurl.toString(),
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              Playerinfo(Item: Players[index]),
+                        ),
+                      );
+                    },
+                  ));
+            },
+          ),
+        ));
+  }
 
   void ChoiceAction(String choice) {
     if (choice == MenuItems.about) {
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>
-          InfoPage()
-      ));
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => InfoPage()));
     } else if (choice == MenuItems.share) {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => SharePage()),
       );
     } else if (choice == MenuItems.exit) {
-    Navigator.pop(context);
+      Navigator.pop(context);
     }
   }
 }

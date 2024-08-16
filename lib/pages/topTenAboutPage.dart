@@ -1,4 +1,3 @@
-
 import 'dart:io';
 import 'package:flutter/material.dart';
 
@@ -8,25 +7,25 @@ class InfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:PreferredSize(
+      appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.0), // ارتفاع AppBar
-    child: AppBar(
-    flexibleSpace: Container(
-    decoration: BoxDecoration(
-    gradient: LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [
-    Colors.blueAccent,  // رنگ اول
-    Colors.greenAccent, // رنگ دوم
-    ],
-    ),
-    ),
-    ),
-      title: Text('About us'),
-      backgroundColor: Colors.transparent, // برای شفاف بودن AppBar
-      elevation: 0, // حذف سایه AppBar
-    ),
+        child: AppBar(
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.blueAccent, // رنگ اول
+                  Colors.greenAccent, // رنگ دوم
+                ],
+              ),
+            ),
+          ),
+          title: Text('About us'),
+          backgroundColor: Colors.transparent, // برای شفاف بودن AppBar
+          elevation: 0, // حذف سایه AppBar
+        ),
       ),
       body: Stack(
         children: [
@@ -39,17 +38,17 @@ class InfoPage extends StatelessWidget {
                 colors: [
                   Colors.blueAccent, // رنگ ابتدایی
                   Colors.greenAccent, // رنگ انتهایی
-
                 ],
               ),
-              ),
             ),
+          ),
           SingleChildScrollView(
             child: Column(
               children: [
                 const CircleAvatar(
                   radius: 70,
-                  backgroundImage: AssetImage('myimage.jpg'), // مسیر عکس پروفایل
+                  backgroundImage:
+                      AssetImage('myimage.jpg'), // مسیر عکس پروفایل
                 ),
                 const Text(
                   'Farhad Akbary',
